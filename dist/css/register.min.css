@@ -1,0 +1,51 @@
+@charset "UTF-8";
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+html，body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: inherit;
+}
+
+img {
+  display: block;
+  border: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong {
+  font-weight: normal;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+i, em {
+  font-style: normal;
+}
+
+.clear::after {
+  content: ".";
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
