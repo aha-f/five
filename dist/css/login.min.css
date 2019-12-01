@@ -1,0 +1,117 @@
+@charset "UTF-8";
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+html，body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: inherit;
+}
+
+img {
+  display: block;
+  border: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong {
+  font-weight: normal;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+i, em {
+  font-style: normal;
+}
+
+.clear::after {
+  content: ".";
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0;
+}
+
+.header {
+  width: 1201px;
+  height: 98px;
+  margin-left: 0px;
+  text-align: center;
+  background: white;
+}
+
+.header .logo {
+  width: 244px;
+  height: 98px;
+  padding: 0;
+}
+
+.header .logo img {
+  width: 244px;
+  height: 98px;
+}
+
+.header .header-line {
+  display: inline-block;
+  width: 2px;
+  height: 44px;
+  background-color: #ccc;
+  margin: 28px 18px 0 18px;
+  padding: 0;
+}
+
+.header .header-text {
+  display: inline-block;
+  width: 165px;
+  height: 98px;
+  line-height: 98px;
+  font-size: 22px;
+  color: #999;
+}
+
+.header .header-right {
+  width: 185px;
+  height: 98px;
+  line-height: 98px;
+  float: right;
+  padding: 0;
+}
+
+.header .header-right img {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin-right: 10px;
+  line-height: 98px;
+}
+
+.header .header-right p {
+  width: 152px;
+  height: 24px;
+  color: #666;
+  font-size: 13px;
+  display: inline-block;
+}
