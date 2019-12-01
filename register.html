@@ -1,13 +1,248 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"  >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>第五大道注册页</title>
-    <link rel="stylesheet" href="./dist/css/">
+    <link rel="stylesheet" href="./dist/css/register.min.css">
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css ">
 </head>
 <body>
+<!-- 固定宽度 -->
+<div class="container">
+       <!-- 头部 -->
+    <div class="row header">
+            <div class="col-lg-4 logo">
+                    <a href="./index.html">
+                        <img src="./dist/img/registor/5luxlogo.jpg" alt="">
+                    </a>
+            </div>
+            <span class="col-lg-1 header-line"></span>
+            <span class="col-lg-1 header-text">注册第五大道</span>
+            <div class="col-lg-7 header-right fr">
+                <img src="./src/img/register/phone-logo.png" alt="">
+                <p>客服热线：4008-6767-38</p>
+            </div>
+        </div>
+          
+</div>
     
+<!-- 主体 -->
+<div class="container-fluid main ">
+     <div class=" main-img" >
+       <div class="login-right">
+            <div class="login-title">注册第五大道</div>
+            <form action="" id="myform" method="POST" charset='utf-8'>
+                 <input type="text" placeholder="手机号" id="userName" name="mobile_phone" class="heig48 w300 password">
+                <div class=" codeWarp">
+                        <input type="text" placeholder="请输入验证码" name="mobile_phone_code" id="code" class="heig48 w152      text">
+                        <span id="get_phone_button" onclick="">获取验证码</span>
+                </div>
+                <input type="password" id="pwd" name="password" class="heig48 w300 password" style="margin-bottom: 8px;" placeholder="请输入密码">
+                <input type="password" id="pwd2" name="password_confirm" class="heig48 w300 password" style="margin-top: 8px;" placeholder="确认密码">
+                <input type="button" value="立即注册" class="sub-btn" onclick="">
+                <div class="rig-bottom">
+                        <label>
+                                <!-- <input type="checkbox" id="remember" name="comfirmiterm" value="1" checked="checked">        -->                             <i></i> 
+                        </label>
+                        <p>我已阅读并同意</p>
+                        <a href="#" class="fir-link" target="_blank">《第五大道用户协议》</a>
+                        <a href="./login.html" class="sec-link fr">已有账号？</a>                            
+                </div>
+            </form>
+       </div>
+    </div>
+</div>
+
+<!--脚步-->
+<footer>
+        <ul class="foot_top clear">
+        <li>
+            <a href="#">
+                <img src="../five/dist/img/index/footer_message01.jpg">
+            </a>
+           <div class="foot_topr">
+               <p class="p1">正品保障</p>
+               <p class="p2">
+                   <a href="#" target="_blank">品牌授权,官方验真</a>
+               </p>
+           </div>
+        </li>
+        <li>
+            <a href="#">
+                <img src="../five/dist/img/index/footer_message02.jpg">
+            </a>
+            <div class="foot_topr">
+                <p class="p1">专柜发货</p>
+                <p class="p2">
+                    <a href="#" target="_blank">专柜直接或到店自提</a>
+                </p>
+            </div>
+        </li>
+        <li>
+            <a href="#">
+                <img src="../five/dist/img/index/footer_message03.jpg">
+            </a>
+            <div class="foot_topr">
+                <p class="p1">无忧售后</p>
+                <p class="p2">
+                    <a href="#" target="_blank">7天无理由退换货</a>
+                </p>
+            </div>
+        </li>
+        <li>
+            <a href="#">
+                <img src="../five/dist/img/index/footer_message04.jpg">
+            </a>
+            <div class="foot_topr">
+                <p class="p1">VIP服务</p>
+                <p class="p2">
+                    <a href="#" target="_blank">享品牌会员售前售后服务</a>
+                </p>
+            </div>
+        </li>
+        <li>
+            <a href="#">
+                <img src="../five/dist/img/index/footer_message05.jpg">
+            </a>
+            <div class="foot_topr">
+                <p class="p1">权威荣誉</p>
+                <p class="p2">
+                    <a href="#" target="_blank">商务部授予诚信示范企业</a>
+                </p>
+            </div>
+        </li>
+    </ul>
+    <!--    脚步中间-->
+        <ul class="foot_middle">
+           <li>
+               <h3>服务保障 </h3>
+               <span>
+                   <a href="#">品牌授权正品</a>
+               </span>
+               <span>
+                   <a href="#">品牌客服</a>
+               </span>
+               <span>
+                   <a href="#">预约到店体验</a>
+               </span>
+               <span>
+                   <a href="#">七天无理由退换</a>
+               </span>
+           </li>
+           <li>
+               <h3>使用帮助</h3>
+               <span>
+                   <a href="#">常见问题</a>
+               </span>
+               <span>
+                   <a href="#">会员制度</a>
+               </span>
+               <span>
+                   <a href="#">集团采购</a>
+               </span>
+               <span>
+                   <a href="#">礼品卡</a>
+               </span>
+           </li>
+           <li>
+               <h3>支付方式</h3>
+               <span>
+                   <a href="#">到店付款</a>
+               </span>
+               <span>
+                   <a href="#">货到付款</a>
+               </span>
+               <span>
+                   <a href="#">在线支付</a>
+               </span>
+               <span>
+                   <a href="#">余额支付</a>
+               </span>
+               <span>
+                   <a href="#">分期付款</a>
+               </span>
+           </li>
+           <li>
+               <h3>配送方式</h3>
+               <span>
+                   <a href="#">配送说明</a>
+               </span>
+               <span>
+                   <a href="#">专柜自提</a>
+               </span>
+               <span>
+                   <a href="#">运费说明</a>
+               </span>
+               <span>
+                   <a href="#">验货签收</a>
+               </span>
+           </li>
+           <li>
+               <h3>售后服务</h3>
+               <span>
+                   <a href="#">品牌售后</a>
+               </span>
+               <span>
+                   <a href="#">售后咨询</a>
+               </span>
+               <span>
+                   <a href="#">退换政策</a>
+               </span>
+               <span>
+                   <a href="#">发票保障</a>
+               </span>
+           </li>
+           <li class="foot_middle_app">
+               <h3>第五大道APP</h3>
+               <img src="../five/dist/img/index/footer_message06.jpg">
+           </li>
+           <li class="foot_middle_app">
+               <h3>第五大道微</h3>
+               <img src="../five/dist/img/index/footer_message07.jpg">
+           </li>
+        </ul>
+    <!--    脚步第三部分-->
+        <div class="foot_bottom">
+           <div class="foot_bottom1">
+               <a href="#">箱包</a>
+               <a href="#">美妆</a>
+               <a href="#">服饰</a>
+               <a href="#">腕表</a>
+               <a href="#">配饰</a>
+               <a href="#">鞋靴</a>
+               <a href="#">特惠</a>
+               <a href="#">礼品区</a>
+           </div>
+            <div class="foot_bottom2">
+                <div>
+                    <a href="#">关于第五大道</a>
+                    <a href="#">网站地图</a>
+                    <a href="#">品牌合作专区</a>
+                    <a href="#">媒体焦距</a>
+                    <a href="#">商务合作</a>
+                    <a href="#">商家合作</a>
+                    <a href="#">加入第五大道</a>
+                    <a href="#">友情链街</a>
+                    <a href="#">奢尚志</a>
+                    <a href="#">联系我们</a>
+                    <a href="#">投诉建议</a>
+                </div>
+                <p>Copyright © 2008-2014 瑞美嘉信国际信息技术（北京）有限公司&nbsp; 版权所有京ICP备09012701号-1</p>
+            </div>
+            <div class="foot_bottom3">
+                <a href="#">
+                    <img src="../five/dist/img/index/14567178388519.jpg">
+                </a>
+                <a href="#">
+                    <img src="../five/dist/img/index/footer_message10.jpg">
+                </a>
+                <a href="#">
+                    <img src="../five/dist/img/index/footer_message11.jpg">
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
