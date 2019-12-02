@@ -1,0 +1,864 @@
+@charset "UTF-8";
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+html，body {
+  height: 100%;
+}
+
+body {
+  color: black;
+  font: 12px/200% "microsoft yahei", 微软雅黑, Helvetica, Arial, Tahoma, 黑体, 宋体, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: inherit;
+}
+
+img {
+  display: block;
+  border: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong {
+  font-weight: normal;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+i, em {
+  font-style: normal;
+}
+
+.clear::after {
+  content: ".";
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+/*头部*/
+.head1 {
+  width: 100%;
+  height: 80px;
+  background: #4200DE;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.head1 a img {
+  display: inline-block;
+  width: 1300px;
+  height: 80px;
+}
+
+.head2 {
+  width: 100%;
+  height: 30px;
+  background: #F2F2F2;
+  line-height: 30px;
+}
+
+.head2 .head2l > li > i {
+  float: left;
+  width: 1px;
+  height: 12px;
+  background: #DFDFDF;
+  margin: 9px 17PX 0 15PX;
+}
+
+.head22 {
+  width: 1210px;
+  height: 30px;
+  background: #F2F2F2;
+}
+
+.head2 .head2l {
+  height: 30px;
+}
+
+.head2 .head2l li {
+  height: 30px;
+  float: left;
+  color: #666666;
+  font-size: 12px;
+}
+
+.head2 .head2l li b {
+  float: left;
+}
+
+.head2 .head2l li span {
+  width: 25px;
+  height: 30px;
+  float: left;
+  background: url(../img/index/brandstore_share.png) no-repeat -348px -338px;
+}
+
+.head2 .head2l li a {
+  font-size: 12px;
+  float: left;
+  height: 30px;
+  color: #666666;
+  margin-left: 7px;
+}
+
+.head2 .head2l li a:hover {
+  color: #B28247;
+}
+
+/*头部右边*/
+.head2 .head2r {
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+}
+
+.head2 .head2r > li {
+  font-size: 12px;
+  color: #666666;
+  float: left;
+  height: 30px;
+}
+
+.head2 .head2r > li i {
+  float: right;
+  background: #666666;
+  border-right: 1px solid #dfdfdf;
+  height: 12px;
+  margin-top: 11px;
+  display: inline;
+}
+
+.head2 .head2r > li a {
+  color: #666666;
+  font-size: 12px;
+  display: inline-block;
+  height: 30px;
+}
+
+.head2 .head2r > li:nth-of-type(1) a {
+  padding-right: 20px;
+  display: inline-block;
+}
+
+.head2 .head2r > li:nth-of-type(1) a:hover {
+  color: #CC0000;
+}
+
+.head2 .head2r > li:nth-of-type(2) span {
+  width: 22px;
+  height: 24px;
+  float: left;
+  background: url(../img/index/youli.gif) no-repeat;
+  margin: 0 5px 0 17px;
+}
+
+.head2 .head2r > li:nth-of-type(2) a {
+  margin-right: 18px;
+  display: inline-block;
+}
+
+.head2 .head2r > li:nth-of-type(2) a:hover {
+  color: #B28247;
+}
+
+.head2 .head2r > li:nth-of-type(3) {
+  width: 130px;
+  height: 30px;
+  padding-left: 15px;
+  background: url(../img/index/brandstore_share.png) no-repeat -253px -436px;
+}
+
+.head2 .head2r > li:nth-of-type(3):hover {
+  background: white;
+}
+
+.head2 .head2r > li:nth-of-type(3):hover .five {
+  width: 130px;
+  height: 30px;
+  background: url(../img/index/brandstore_share.png) no-repeat -268px -464px;
+  color: #B28247;
+}
+
+.head2 .head2r > li:nth-of-type(3) > .five:hover {
+  color: #d00000;
+}
+
+/*二级菜单*/
+.second {
+  width: 145px;
+  height: 30px;
+  position: absolute;
+  left: 132px;
+  z-index: 999;
+  float: left;
+  display: none;
+}
+
+.second ul {
+  width: 145px;
+  height: 30px;
+  background: white;
+}
+
+.second ul li {
+  padding-left: 36px;
+  background: white;
+}
+
+.second a {
+  display: inline-block;
+}
+
+.second > ul > li:hover a {
+  color: #d00000;
+}
+
+.head2 .head2r > li:nth-of-type(3):hover .second {
+  display: block;
+}
+
+.head2 .head2r > li:nth-of-type(4) a {
+  margin: 0 18px;
+  display: inline-block;
+}
+
+.head2 .head2r > li:nth-of-type(5) {
+  width: 128px;
+  background: url(../img/index/brandstore_share.png) no-repeat -196px -369px;
+}
+
+.head2 .head2r > li:nth-of-type(5):hover {
+  background: white;
+}
+
+.head2 .head2r > li:nth-of-type(5):hover .ph {
+  width: 128px;
+  color: #d00000;
+  background: url(../img/index/brandstore_share.png) no-repeat -196px -404px;
+}
+
+.head2 .head2r > li:nth-of-type(5) > a {
+  display: inline-block;
+  padding-left: 13px;
+}
+
+/*二级菜单*/
+.phone {
+  width: 128px;
+  height: 147px;
+  background-color: white;
+  text-align: center;
+  display: none;
+  z-index: 999;
+  position: absolute;
+}
+
+.phone a {
+  display: inline-block;
+  font-size: 13px;
+  color: #666;
+}
+
+.phone a p {
+  font-size: 13px;
+  color: #666;
+  line-height: 20px;
+}
+
+.phone a span {
+  font-size: 16px;
+  color: #d00000;
+}
+
+.head2 .head2r > li:nth-of-type(5):hover .phone {
+  display: block;
+}
+
+/*头部第三部分*/
+.head3 {
+  width: 1210px;
+  height: 110px;
+  text-align: center;
+  position: relative;
+}
+
+.head3 a:nth-of-type(2) {
+  padding-top: 15px;
+  padding-left: 47px;
+  display: inline-block;
+}
+
+.head3 a:nth-of-type(2) > img {
+  display: inline-block;
+}
+
+/*搜索款*/
+.head3 > .search {
+  width: 347px;
+  margin: 35px 0 0 55px;
+  border: 2px solid #C69C6D;
+  height: 34px;
+}
+
+.head3 > .search .search_input {
+  height: 30px;
+  width: 263px;
+}
+
+.head3 > .search .search_b {
+  width: 80px;
+  height: 34px;
+  background: #C69C6D;
+  color: white;
+  border: none;
+  /*margin-top: 4px;*/
+  font-size: 13px;
+}
+
+.corre {
+  width: 347px;
+  height: 32px;
+}
+
+.corre > li {
+  float: left;
+  font-size: 11px;
+  line-height: 32px;
+}
+
+.corre > li > a {
+  display: inline-block;
+  padding-right: 22px;
+  color: #999999;
+  font-size: 11px;
+}
+
+.corre > li > a:hover {
+  color: #d00000;
+}
+
+.overseaenter {
+  position: absolute;
+  top: 35px;
+  z-index: 30;
+  right: 123px;
+  width: 200px;
+  height: 30px;
+  background: url(../img/index/overseadef.jpg) no-repeat;
+  background-size: 100% 100%;
+  transition: 1.5s;
+}
+
+.overseaenter:hover {
+  background: url(../img/index/overseahov.jpg) no-repeat;
+}
+
+/*购物车*/
+.shopping {
+  width: 96px;
+  height: 34px;
+  line-height: 32px;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+  color: #666;
+  margin-top: 35px;
+  background: url(../img/index/brandstore_share.png) no-repeat -376px -405px;
+}
+
+.shopping > img {
+  margin: 2px 0 0  10px;
+}
+
+.shopping > span {
+  margin-left: 15px;
+  float: left;
+  font-size: 11px;
+}
+
+.shopping > span > i {
+  color: #d00000;
+}
+
+.shopping_b {
+  width: 268px;
+  height: 48px;
+  position: absolute;
+  right: 0;
+  top: 71px;
+  z-index: 998;
+  background: white;
+  text-align: center;
+  padding: 10px 10px 20px 10px;
+  display: none;
+}
+
+.shopping_b p {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.shopping:hover .shopping_b {
+  display: block;
+}
+
+/*导航*/
+nav {
+  width: 100%;
+  height: 38px;
+  background: url(../img/index/navi_1pxbg.png) repeat-x;
+  vertical-align: middle;
+  -webkit-box-shadow: 0 4px 4px #c7c6c6;
+  color: #000;
+  position: relative;
+}
+
+nav > ul {
+  width: 1210px;
+  height: 40px;
+}
+
+nav > ul > li {
+  float: left;
+  display: inline-block;
+  z-index: 20;
+  font-size: 14px;
+  text-align: center;
+  font-family: "微软雅黑";
+  height: 40px;
+  line-height: 40px;
+}
+
+nav > ul > li > a {
+  display: block;
+  width: 82px;
+  height: 38px;
+  color: #c8a985;
+}
+
+nav > ul > li > a:hover {
+  color: white;
+  margin: 0;
+}
+
+nav > ul > li > a:active {
+  background: #CF0101;
+  background: url(../img/index/lux_index.png) -8px -215px no-repeat;
+  font-size: 14px;
+  font-weight: bold;
+  height: 38px;
+  color: #fff;
+  display: inline-block;
+  z-index: 999;
+  margin: 0;
+}
+
+/*商品分类*/
+/*二级菜单*/
+nav > ul > li:nth-of-type(1) > a {
+  margin: 0;
+  width: 130px;
+  background: url(../img/index/lux_index.png) -8px -215px no-repeat;
+  font-size: 14px;
+  font-weight: bold;
+  height: 38px;
+  color: #fff;
+  display: inline-block;
+  z-index: 999;
+}
+
+/*划过显示的效果*/
+nav > ul > li:nth-of-type(1):hover .category {
+  display: block;
+}
+
+.category {
+  width: 130px;
+  position: absolute;
+  top: 38px;
+  left: 70px;
+  z-index: 666;
+  background: rgba(255, 255, 255, 0.7);
+  display: none;
+}
+
+.category li {
+  text-align: left;
+  line-height: 36px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 48px;
+}
+
+.category li > a {
+  display: block;
+  color: #000;
+}
+
+.category li > a:hover {
+  color: #C69C6D;
+}
+
+.category li:hover i {
+  position: absolute;
+  right: 2px;
+  top: 0;
+  height: 36px;
+  width: 20px;
+  background: url(../img/index/share02.png) no-repeat -304px -33px;
+}
+
+/*推荐品牌*/
+.category > li:nth-child(1) {
+  background: url(../img/index/brand_category1.png) -3px -5px no-repeat;
+}
+
+/*箱包*/
+.category > li:nth-child(2) {
+  background: url(../img/index/brand_category1.png) -3px -36px no-repeat;
+}
+
+/*美妆*/
+.category > li:nth-child(3) {
+  background: url(../img/index/brand_category1.png) -3px -68px no-repeat;
+}
+
+/*服装*/
+.category > li:nth-child(4) {
+  background: url(../img/index/brand_category1.png) -3px -100px no-repeat;
+}
+
+/*腕表*/
+.category > li:nth-child(5) {
+  background: url(../img/index/brand_category1.png) -3px -132px no-repeat;
+}
+
+/*配饰*/
+.category > li:nth-child(6) {
+  background: url(../img/index/brand_category1.png) -3px -165px no-repeat;
+}
+
+/*鞋靴*/
+.category > li:nth-child(7) {
+  background: url(../img/index/brand_category1.png) -3px -196px no-repeat;
+}
+
+/*母婴*/
+.category > li:nth-child(8) {
+  background: url(../img/index/brand_category1.png) -3px -228px no-repeat;
+}
+
+/*美酒*/
+.category > li:nth-child(9) {
+  background: url(../img/index/brand_category1.png) -3px -261px no-repeat;
+}
+
+/*美食*/
+.category li:nth-child(10) {
+  background: url(../img/index/brand_category1.png) -3px -294px no-repeat;
+}
+
+/*家居*/
+.category > li:nth-child(11) {
+  background: url(../img/index/brand_category1.png) -3px -326px no-repeat;
+}
+
+/*电子*/
+.category > li:nth-child(12) {
+  background: url(../img/index/brand_category1.png) -3px -357px no-repeat;
+}
+
+/*办公*/
+.category > li:nth-child(13) {
+  background: url(../img/index/brand_category1.png) -3px -390px no-repeat;
+}
+
+/*礼品*/
+.category > li:nth-child(14) {
+  background: url(../img/index/brand_category1.png) -3px -422px no-repeat;
+}
+
+/*海外馆*/
+.category > li:nth-child(15) {
+  background: url(../img/index/brand_category1.png) -3px -458px no-repeat;
+}
+
+/*推荐品牌的二级菜单*/
+.recommend {
+  position: absolute;
+  top: 0;
+  left: 130px;
+  z-index: 999;
+  width: 800px;
+  height: 258px;
+  background: #ffffff;
+  display: none;
+}
+
+.showshop {
+  background-color: #ffffff;
+  min-width: 605px;
+  max-width: 750px;
+  border-bottom: #d7d7d7 1px solid;
+  margin: 10px 0px 10px 20px;
+  float: left;
+  clear: both;
+  /*overflow: hidden;*/
+  line-height: 25px;
+  font-size: 14px;
+  font-family: "微软雅黑";
+  color: #000;
+}
+
+.showshop > h2 {
+  font-size: 14px;
+  float: left;
+  width: 105px;
+  font-style: normal;
+  padding-left: 25px;
+  text-align: left;
+  color: #CF0201;
+  font-weight: bold;
+}
+
+.showshop > h2 > a {
+  color: #CF0201;
+  font-weight: bold;
+}
+
+.showbag {
+  max-width: 500px;
+  min-height: 25px;
+  line-height: 25px;
+  float: left;
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  font-family: "微软雅黑";
+  color: #000;
+}
+
+.showbag a {
+  color: #757272;
+  font-size: 12px;
+  float: left;
+  margin-right: 10px;
+}
+
+.showindex {
+  float: left;
+  padding-left: 25px;
+  width: 590px;
+  height: 70px;
+}
+
+.showindex a {
+  display: block;
+  width: 115px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: #cf0201;
+  margin-top: 20px;
+  float: left;
+  margin-left: 20px;
+}
+
+.recommend a:hover {
+  text-decoration: underline;
+}
+
+.category > li:nth-child(1):hover .recommend {
+  display: block;
+}
+
+/*箱包*/
+.menu_show {
+  width: 800px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 130px;
+  top: 0px;
+  min-height: 220px;
+  display: none;
+}
+
+.menu_show a:hover {
+  text-decoration: underline;
+}
+
+.category li:nth-child(2):hover .menu_show {
+  display: block;
+}
+
+/*美妆*/
+/*到店*/
+nav > ul > li:nth-of-type(11) > a > i {
+  display: inline-block;
+  float: left;
+  width: 19px;
+  height: 40px;
+  line-height: 40px;
+  background: url(../img/index/share02.png) no-repeat -58px -169px;
+  margin-left: 23px;
+}
+
+nav > ul > li:nth-of-type(11) > a > i:hover {
+  display: inline-block;
+  width: 19px;
+  height: 40px;
+  line-height: 40px;
+  background: url(../img/index/share02.png) no-repeat -366px -252px;
+  margin-left: 23px;
+}
+
+/*海外服务*/
+.overseaslogo {
+  position: absolute;
+  top: 0;
+  line-height: 38px;
+  overflow: hidden;
+  z-index: 10;
+  right: 222px;
+  width: 100px;
+  height: 38px;
+  background: url(../img/index/overseaslogo.gif) no-repeat;
+  background-size: 100% 100%;
+}
+
+.logo {
+  width: 138px;
+  height: 40px;
+  text-align: justify;
+}
+
+.logo > li {
+  float: left;
+  text-align: justify;
+}
+
+.logo > li > a {
+  display: inline-block;
+  width: 30px;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  margin-right: 16px;
+}
+
+.logo > li:nth-of-type(1) > a {
+  background: url(../img/index/share02.png) no-repeat -237px -66px;
+}
+
+.logo > li:nth-of-type(2) > a {
+  background: url(../img/index/share02.png) no-repeat -296px -66px;
+}
+
+.logo > li:nth-of-type(3) > a {
+  background: url(../img/index/share02.png) no-repeat -354px -66px;
+}
+
+/*主体*/
+main {
+  width: 100%;
+  height: 11974px;
+  background-color: #000;
+}
+
+main .main {
+  width: 100%;
+  height: 11974px;
+  background: url(../img/product/brand01.jpg) no-repeat center top;
+  /*品牌介绍左边*/
+  /*品牌介绍右边*/
+}
+
+main .main .main-brand {
+  width: 1210px;
+  height: 140px;
+  background: white;
+}
+
+main .main .main-brand li {
+  list-style: none;
+}
+
+main .main .main-brand .main-brand-db {
+  margin-left: 20px;
+}
+
+main .main .main-brand .main-brand-db .dbil_img {
+  width: 160px;
+  height: 88px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0px -1px 8px #999,1px 1px 8px #999,1px 1px 8px #999,-1px 1px 8px #999;
+}
+
+main .main .main-brand .main-brand-db .dbil_fg {
+  width: 140px;
+  margin: 0 auto;
+  height: 12px;
+  position: relative;
+  background-color: #7c665d;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  text-align: center;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  -webkit-box-shadow: 0px 3px 5px #000;
+}
+
+main .main .main-brand .main-brand-db .dbil_fg span {
+  line-height: 12px;
+  height: 12px;
+}
+
+main .main .main-brand .main-brand-db .dbil_fg span a {
+  text-decoration: none;
+  position: absolute;
+  top: 9px;
+  left: 28px;
+  height: 12px;
+  line-height: 12px;
+  color: #fff;
+}
+
+main .main .main-brand .main-brand-db .dbil_fg span a:hover {
+  color: #b28247;
+}
+
+main .main .main-brand-r {
+  padding-left: 110px;
+  height: 35px;
+  background: yellow;
+}

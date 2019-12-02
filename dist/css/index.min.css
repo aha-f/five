@@ -8,6 +8,11 @@ html，body {
   height: 100%;
 }
 
+body {
+  color: black;
+  font: 12px/200% "microsoft yahei", 微软雅黑, Helvetica, Arial, Tahoma, 黑体, 宋体, sans-serif;
+}
+
 a {
   text-decoration: none;
 }
@@ -48,6 +53,14 @@ i, em {
   visibility: hidden;
   display: block;
   clear: both;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
 }
 
 /*头部*/

@@ -8,6 +8,11 @@ html，body {
   height: 100%;
 }
 
+body {
+  color: black;
+  font: 12px/200% "microsoft yahei", 微软雅黑, Helvetica, Arial, Tahoma, 黑体, 宋体, sans-serif;
+}
+
 a {
   text-decoration: none;
 }
@@ -50,6 +55,14 @@ i, em {
   clear: both;
 }
 
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
 .container-fluid {
   width: 100%;
   padding: 0;
@@ -85,15 +98,16 @@ i, em {
 
 .header .header-text {
   display: inline-block;
-  width: 165px;
+  width: 88px;
   height: 98px;
   line-height: 98px;
   font-size: 22px;
   color: #999;
+  padding: 0;
 }
 
 .header .header-right {
-  width: 185px;
+  width: 187px;
   height: 98px;
   line-height: 98px;
   float: right;
@@ -109,9 +123,263 @@ i, em {
 }
 
 .header .header-right p {
-  width: 152px;
+  width: 153px;
   height: 24px;
   color: #666;
   font-size: 13px;
   display: inline-block;
+}
+
+/*主体*/
+.main {
+  width: 100%;
+  height: 584px;
+  background: #262626;
+  /*登录头部*/
+  /*
+    登录正文
+    */
+  /* 登录底部*/
+}
+
+.main .main-img {
+  width: 1210px;
+  height: 584px;
+  background: url(../img/register/main.jpg);
+  background-size: 100% 584px;
+}
+
+.main .login-right {
+  width: 400px;
+  height: 524px;
+  background: white;
+  float: right;
+  margin-right: 40px;
+  margin-top: 30px;
+}
+
+.main .login-right .log-title {
+  margin: 0 20px;
+  margin-top: 0px;
+  margin-top: 34px;
+  font-size: 20px;
+  line-height: 20px;
+  height: 20px;
+  color: #999;
+}
+
+.main .login-right .log-title .log-title-list {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  width: 49%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.main .login-right .log-title .log-title-middle {
+  width: 2px;
+  height: 20px;
+  line-height: 20px;
+  background: #999;
+}
+
+.main .log-body {
+  width: 100%;
+  height: 380px;
+  text-align: center;
+  /*默认扫码*/
+  /*账户密码登录*/
+}
+
+.main .log-body .log-sc {
+  width: 100%;
+  height: 380px;
+  position: relative;
+  display: none;
+}
+
+.main .log-body .log-sc .log-scan {
+  position: relative;
+}
+
+.main .log-body .log-sc .log-scan .scancode_img {
+  width: 165px;
+  height: 165px;
+  position: absolute;
+  left: 33px;
+  top: 75px;
+}
+
+.main .log-body .log-sc .log-scan .qc-img {
+  margin-left: 20px;
+  width: 165px;
+  height: 165px;
+  position: absolute;
+  left: 213px;
+  top: 75px;
+}
+
+.main .log-body .log-sc .log-scan .log-start {
+  width: 400px;
+  padding-top: 25px;
+  font-size: 14px;
+  color: #999999;
+  position: absolute;
+  top: 234px;
+}
+
+.main .log-body .log-nra {
+  width: 400px;
+  height: 380px;
+  position: relative;
+}
+
+.main .log-body .log-nra .inp-hook {
+  margin: 0 31px;
+  margin-top: 16px;
+  width: 339px;
+  height: 48px;
+  color: #CCC;
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+.main .log-body .log-nra .sub-btn {
+  -webkit-transition: all linear 0.5s;
+  width: 338px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  background: #333;
+  margin: 0 31px;
+  text-decoration: none;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  margin-top: 54px;
+}
+
+.main .log-body .log-nra .sub-bottom {
+  margin: 0 31px;
+  margin-top: 20px;
+  height: 14px;
+  line-height: 14px;
+  font-size: 0;
+  color: #999;
+  position: relative;
+}
+
+.main .log-body .log-nra .sub-bottom i {
+  width: 14px;
+  height: 14px;
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  background-image: url(../img/register/is_yes.png);
+  position: absolute;
+  top: 3px;
+  left: -1px;
+}
+
+.main .log-body .log-nra .sub-bottom p {
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: middle;
+  margin-left: 5px;
+  margin-top: 0;
+  height: 14px;
+  line-height: 14px;
+  position: absolute;
+  top: 2px;
+}
+
+.main .log-body .log-nra .sub-bottom .sub-bottom-right {
+  height: 100%;
+  font-size: 14px;
+}
+
+.main .other-type {
+  width: 400px;
+  height: 16px;
+  width: 100%;
+  background: url(../img/register/other-type.jpg) 100% 100% no-repeat;
+}
+
+.main .is_ot {
+  width: 400px;
+  height: 74px;
+  position: relative;
+  margin: 0 94px;
+}
+
+.main .is_ot .ul-hook {
+  position: absolute;
+  width: 212px;
+  height: 32px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.main .is_ot .ul-hook .li-hook {
+  height: 32px;
+  width: 33.3333333%;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+
+.main .is_ot .ul-hook .li-hook i {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  cursor: pointer;
+}
+
+.main .is_ot .ul-hook .li-hook a {
+  width: 32px;
+  height: 32px;
+}
+
+.main .is_ot .ul-hook .li-hook .is_wx {
+  background-image: url(../img/register/is_wx.png);
+}
+
+.main .is_ot .ul-hook .li-hook .is_wx_s {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 0px;
+  left: 19px;
+  display: none;
+}
+
+.main .is_ot .ul-hook .li-hook .is_qq_s {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: -2px;
+  left: 17px;
+  display: none;
+}
+
+.main .is_ot .ul-hook .li-hook .is_wb_s {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 0px;
+  left: 19px;
+  display: none;
+}
+
+.main .is_ot .ul-hook .li-hook .is_qq {
+  background-image: url(../img/register/is_qq.png);
+}
+
+.main .is_ot .ul-hook .li-hook .is_wb {
+  background-image: url(../img/register/is_wb.png);
 }

@@ -15,15 +15,20 @@ gulp.task('img',() => {
     .pipe(imagemin())
     .pipe(gulp.dest('./dist/img/index'))
 })
-gulp.task('registor',() => {
+gulp.task('register',() => {
     gulp.src('./src/img/register/*.*')
     .pipe(imagemin())
-    .pipe(gulp.dest('./dist/img/registor'))
+    .pipe(gulp.dest('./dist/img/register'))
 })
 gulp.task('login',() => {
     gulp.src('./src/img/login/*.*')
     .pipe(imagemin())
     .pipe(gulp.dest('./dist/img/login'))
+})
+gulp.task('product',() => {
+    gulp.src('./src/img/product/*.*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('./dist/img/product'))
 })
 //处理sass
 gulp.task('sass',()=>{

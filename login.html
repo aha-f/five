@@ -7,6 +7,7 @@
     <title>第五大道登录</title>
     <link rel="stylesheet" href="./dist/css/bootstrap.min.css ">
     <link rel="stylesheet" href="./dist/css/login.min.css">
+   
 
 </head>
 <body>
@@ -16,17 +17,112 @@
      <div class="row header">
              <div class="col-lg-4 logo">
                      <a href="./index.html">
-                         <img src="./dist/img/registor/5luxlogo.jpg" alt="">
+                         <img src="./dist/img/register/5luxlogo.jpg" alt="">
                      </a>
              </div>
              <span class="col-lg-1 header-line"></span>
              <span class="col-lg-1 header-text">欢迎登录</span>
              <div class="col-lg-7 header-right fr">
-                 <img src="./src/img/register/phone-logo.png" alt="">
+                 <img src="./dist/img/register/phone-logo.png" alt="">
                  <p>客服热线：4008-6767-38</p>
              </div>
          </div>
            
  </div>
+ <!-- 主体 -->
+<div class="container-fluid main ">
+    <div class=" main-img" >
+      <div class="login-right">
+          <!-- 登录头部                         -->
+          <ul class="log-title">
+              <li class="log-title-list fl">扫码登录</li>
+              <li class=" log-title-middle fl"></li>
+              <li class="log-title-list fl">账户登录</li>
+          </ul>
+          <!-- 登录正文 -->
+        <div class="log-body" id="log-body" >
+            <div class="log-sc">
+                  <!-- 默认扫码 -->
+                <div class="log-scan" id="log-scan"  > 
+                    <img src="http://m.5lux.com/api/gen2qrcode?t=1575252298126" class="scancode_img" alt="">
+                    <img class="qc-img " src="./dist/img/register/exqcode.png">
+                    <div class=" log-start">
+                            <p class="start-text ">
+                                    打开<a href="javascript:void(0);" style="color: #ff9900;text-decoration:none;">第五大道APP</a> 扫一扫登录<br>
+                                    <a href="./register.html">立即注册有惊喜 &gt;</a>                                
+                              </p>
+                     </div>
+                </div>
+                <!-- 扫码成功提示 -->
+                <div class="log-scan-success" id="log-scan-success"></div>
+                <!-- 扫码失败提示 -->
+                <div class="log-scan-error" id="log-scan-error"></div>
+  
+            </div>
+            <!-- 密码登录 -->
+            <div class="log-nra">
+                <form action="./login.html" id="submit" method="POST" accept-charset="utf-8">
+                  <input type="text" class="inp-hook text" name="username" placeholder="邮箱/手机号/账号" style="border: 1px solid #999">
+                  <input type="password" name="password" value="" class="inp-hook password" placeholder="密码">
+                  <input type="submit" id="loginsubmit" value="立即登录" class="sub-btn submit">
+                  <ul class="sub-bottom">
+                        <li class="sub-bottom-left fl">
+                                <label>
+                                    <input type="checkbox" name="" >
+                                    <i></i>
+                                </label>
+                                <p>自动登录</p>
+                        </li>
+                        <li class="sub-bottom-right fr">
+                                <a href="register.html" style="color: #ff9900;">立即注册</a>                                    |
+                                <a href="#">忘记密码?</a>                
+                        </li>
+                         <input type="hidden" name="returnurl" value="">
+                </ul>
+                </form>
+            </div>
+            <!-- 登录底部 -->
+            <div class="log-foot">
+                    <div class="other-type"></div>
+                    <!-- 其他方式登录 -->
+                    <div class="is_ot">
+                            <ul class="ul-hook">
+                                    <li class="li-hook">
+                                        <a title="微信用户登录" href="#">
+                                            <i class="i-hook is_wx" data-base="is_wx_s"></i>
+                                            <svg class="icon is_wx_s" aria-hidden="true">
+                                                    <use xlink:href="#icon-weixin"   ></use>
+                                             </svg>
+                                        </a>
+                                    </li>
+                                    <li class="li-hook">
+                                        <a title="QQ用户登录" href="#">
+                                            <i class="i-hook is_qq" data-base="is_qq_s"></i>
+                                            <svg class="icon is_qq_s" aria-hidden="true">
+                                                    <use xlink:href="#icon-QQ"  ></use>
+                                             </svg>
+                                        </a>
+                                    </li>
+                                    <li class="li-hook">
+                                        <a title="新浪微博用户登录" href="#">
+                                            <i class="i-hook is_wb" data-base="is_wb_s"></i>
+                                            <svg class="icon is_wb_s" aria-hidden="true">
+                                                    <use xlink:href="#icon-weibo" ></use>
+                                             </svg>
+                                         </a>
+                                    </li>
+                                    <span class="after-hook"></span>
+                            </ul>
+                    </div>
+  
+            </div>
+
+            
+        </div>
+      </div> 
+    </div>
+   </div>
+</div>
+<script src="./dist/font/iconfont.js"></script>
 </body>
 </html>

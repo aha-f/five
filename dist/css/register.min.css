@@ -8,6 +8,11 @@ html，body {
   height: 100%;
 }
 
+body {
+  color: black;
+  font: 12px/200% "microsoft yahei", 微软雅黑, Helvetica, Arial, Tahoma, 黑体, 宋体, sans-serif;
+}
+
 a {
   text-decoration: none;
 }
@@ -50,6 +55,14 @@ i, em {
   clear: both;
 }
 
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
 .container-fluid {
   width: 100%;
   padding: 0;
@@ -85,11 +98,12 @@ i, em {
 
 .header .header-text {
   display: inline-block;
-  width: 165px;
+  width: 132px;
   height: 98px;
   line-height: 98px;
   font-size: 22px;
   color: #999;
+  padding: 0;
 }
 
 .header .header-right {
@@ -126,9 +140,11 @@ i, em {
 .main .main-img {
   width: 1210px;
   height: 536px;
+  background: url(../img/register/main.jpg);
+  background-size: 100% 584px;
 }
 
-.main .login-right {
+.main .register-right {
   width: 400px;
   height: 476px;
   background: white;
@@ -138,7 +154,7 @@ i, em {
   padding: 30px 0;
 }
 
-.main .login-right .login-title {
+.main .register-right .register-title {
   padding: 35px 0;
   font-size: 20px;
   height: 20px;
@@ -147,36 +163,36 @@ i, em {
   color: #000;
 }
 
-.main .login-right #myform {
+.main .register-right #myform {
   width: 340px;
   text-align: center;
 }
 
-.main .login-right #myform .w300 {
+.main .register-right #myform .w300 {
   height: 50px;
   padding: 0 19px;
   width: 300px;
 }
 
-.main .login-right #myform .heig48 {
+.main .register-right #myform .heig48 {
   height: 48px;
   border: 1px solid  #ccc;
   font-size: 14px;
 }
 
-.main .login-right #myform .w152 {
+.main .register-right #myform .w152 {
   padding: 0 19px;
   width: 142px;
   margin-right: 27px;
 }
 
-.main .login-right #myform .codeWarp {
+.main .register-right #myform .codeWarp {
   width: 340px;
   padding-bottom: 16px;
   margin-top: 8px;
 }
 
-.main .login-right #myform .codeWarp span {
+.main .register-right #myform .codeWarp span {
   display: inline-block;
   vertical-align: middle;
   width: 130px;
@@ -188,7 +204,7 @@ i, em {
   cursor: pointer;
 }
 
-.main .login-right #myform .sub-btn {
+.main .register-right #myform .sub-btn {
   -webkit-transition: all linear 0.5s;
   width: 300px;
   height: 50px;
@@ -203,22 +219,35 @@ i, em {
   cursor: pointer;
 }
 
-.main .login-right #myform .rig-bottom {
+.main .register-right #myform .rig-bottom {
   width: 340px;
   height: 14px;
   line-height: 14px;
   padding-bottom: 30px;
+  position: relative;
 }
 
-.main .login-right #myform .rig-bottom i {
+.main .register-right #myform .rig-bottom .deal {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 4px;
+  bottom: 16px;
+}
+
+.main .register-right #myform .rig-bottom i {
   width: 14px;
   height: 14px;
   background-repeat: no-repeat;
   background-size: 14px 14px;
+  background-image: url(../img/register/is_yes.png);
   cursor: pointer;
+  position: absolute;
+  left: 4px;
+  bottom: 16px;
 }
 
-.main .login-right #myform .rig-bottom p {
+.main .register-right #myform .rig-bottom p {
   display: inline-block;
   font-size: 13px;
   height: 14px;
@@ -227,16 +256,16 @@ i, em {
   color: #999;
 }
 
-.main .login-right #myform .rig-bottom .fir-link {
+.main .register-right #myform .rig-bottom .fir-link {
   color: #333;
   margin-bottom: 10px;
 }
 
-.main .login-right #myform .rig-bottom .sec-link {
+.main .register-right #myform .rig-bottom .sec-link {
   color: #ff9900;
 }
 
-.main .login-right #myform .rig-bottom a {
+.main .register-right #myform .rig-bottom a {
   display: inline-block;
   font-size: 13px;
   height: 14px;
