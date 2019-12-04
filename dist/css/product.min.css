@@ -790,16 +790,19 @@ nav > ul > li:nth-of-type(11) > a > i:hover {
 /*主体*/
 main {
   width: 100%;
-  height: 11974px;
+  height: 3000px;
   background-color: #000;
 }
 
 main .main {
   width: 100%;
-  height: 11974px;
+  height: 3000px;
   background: url(../img/product/brand01.jpg) no-repeat center top;
   /*品牌介绍左边*/
   /*品牌介绍右边*/
+  /*子分类及品牌属性-开始*/
+  /*价格区间、色系、使用人群分类 start-*/
+  /*商品列表*/
 }
 
 main .main .main-brand {
@@ -858,7 +861,565 @@ main .main .main-brand .main-brand-db .dbil_fg span a:hover {
 }
 
 main .main .main-brand-r {
+  padding-top: 15px;
   padding-left: 110px;
+  height: 123px;
+  position: relative;
+}
+
+main .main .main-brand-r .main-brand-lv {
+  position: relative;
+  width: 920px;
+}
+
+main .main .main-brand-r .main-brand-lv .lv {
+  float: left;
+  line-height: 35px;
+  padding-left: 7px;
+  color: #666;
+  padding-right: 22px;
+  font-size: 18px;
+}
+
+main .main .main-brand-r .main-brand-lv .share {
+  position: absolute;
+  right: 259px;
+  display: inline-block;
+  line-height: 35px;
+  float: left;
+  cursor: pointer;
+  margin-left: 300px;
+}
+
+main .main .main-brand-r .main-brand-lv .share .share-tb {
+  width: 25px;
   height: 35px;
-  background: yellow;
+  display: inline-block;
+  float: left;
+  background: url(../img/product/brandstore_share.png) no-repeat -68px -334px;
+}
+
+main .main .main-brand-r .main-brand-lv .share .share-text {
+  float: left;
+  line-height: 35px;
+  padding-left: 7px;
+  color: #666;
+  padding-right: 22px;
+}
+
+main .main .main-brand-r .main-brand-lv .share-attention {
+  line-height: 35px;
+  padding-left: 7px;
+  color: #666;
+  padding-right: 22px;
+  float: left;
+  position: absolute;
+  right: 155px;
+}
+
+main .main .main-brand-r .main-brand-lv .share-attention .share-attention-text {
+  padding: 2px 13px;
+  border: 1px solid #bfa79d;
+  border-radius: 5px;
+  color: #3f2b2a;
+  cursor: pointer;
+}
+
+main .main .main-brand-r .main-brand-lv .share-story {
+  float: left;
+  line-height: 35px;
+  padding-left: 7px;
+  color: #666;
+  padding-right: 22px;
+  position: absolute;
+  right: 43px;
+}
+
+main .main .main-brand-r .main-brand-lv .share-story .dbirh_o {
+  color: #d00000;
+  cursor: pointer;
+}
+
+main .main .main-brand-r .main-brand-body {
+  padding-top: 5px;
+  color: #999;
+  padding-left: 7px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  position: absolute;
+  bottom: 47px;
+}
+
+main .main .box {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #fff;
+  width: 1210px;
+  height: 174px;
+  padding-bottom: 10px;
+}
+
+main .main .box .brandsearch {
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 8px 0;
+}
+
+main .main .box .brandsearch .suoyou {
+  border: none;
+  min-width: 20px;
+  padding-left: 10px;
+  text-align: center;
+  height: 25px;
+  line-height: 25px;
+  font-family: "宋体";
+  font-size: 13px;
+  position: relative;
+  padding-right: 20px;
+}
+
+main .main .box .brandsearch a {
+  color: #79502d;
+  padding: 0 10px;
+}
+
+main .main .box .brandsearch b {
+  width: 28px;
+  line-height: 25px;
+  display: inline-block;
+  background: url(../img/product/brandstore_share.png) no-repeat -106px -290px;
+}
+
+main .main .box .brandsearch span {
+  text-align: center;
+  border: 1px dotted #000;
+  min-width: 80px;
+  height: 25px;
+  padding: 6px 0px;
+  line-height: 25px;
+  font-family: "宋体";
+  background-color: #fff;
+  font-size: 13px;
+  position: relative;
+}
+
+main .main .box .brandsearch .brandsearch_lv {
+  width: 191px;
+  height: 25px;
+  padding: 2px 10px;
+  font-size: 14px;
+}
+
+main .main .box .box_small {
+  width: 1169px;
+  height: 113px;
+  margin: 0 auto;
+  border-top: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+  border-bottom: 2px solid #e6e6e6;
+}
+
+main .main .box .box_small .box-main {
+  width: 1169px;
+}
+
+main .main .box .box_small .box_sm_gray {
+  width: 86px;
+  float: left;
+  text-align: center;
+  height: 45px;
+  line-height: 45px;
+  background: #F0F0F0;
+}
+
+main .main .box .box_small .box_sm_gray a {
+  font-weight: bold;
+  font-size: 13px;
+  color: #000;
+}
+
+main .main .box .box_small .box_sm_f0 {
+  height: 69px;
+  background: #F0F0F0;
+}
+
+main .main .box .box_small .box_sm_list {
+  width: 492px;
+  height: 45px;
+  line-height: 45px;
+}
+
+main .main .box .box_small .box_sm_list .box_sm_list__ {
+  width: 380px;
+  height: 32px;
+  margin-left: -5px;
+}
+
+main .main .box .box_small .box_sm_list a {
+  float: left;
+  padding: 0px 7px;
+  margin: 11px 5px 0 5px;
+  position: relative;
+  height: 24px;
+  line-height: 24px;
+  display: inline-block;
+  color: #b28247;
+}
+
+main .main .box .box_small .box_sm_list a:hover {
+  background-color: #c69c6d;
+  color: #ffffff;
+}
+
+main .main .moreshadow {
+  -webkit-box-shadow: 0 0 0 #999,0 0 0 #999,0 0 0 #999,2px 2px 5px #999;
+  width: 1210px;
+  height: 55px;
+  background-color: #fff;
+  margin: 10px auto;
+}
+
+main .main .moreshadow .brand_range_l {
+  width: 83px;
+  float: left;
+  text-align: left;
+  font-weight: 500;
+  font-size: 13px;
+  color: #6e3e0e;
+  text-indent: 20px;
+}
+
+main .main .moreshadow .brand_range_r {
+  width: 1085px;
+  float: left;
+  padding-bottom: 10px;
+  background-color: #fff;
+  min-height: 45px;
+}
+
+main .main .moreshadow .brand_range_r .brand_text {
+  height: auto;
+  margin-left: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+main .main .moreshadow .brand_range_r .brand_text a {
+  color: #c69c6d;
+  float: left;
+  padding: 0px 7px;
+  margin: 8px 5px 0 5px;
+  position: relative;
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+}
+
+main .main .moreshadow .brand_range_r .brand_text a:hover {
+  background-color: #c69c6d;
+  color: #ffffff;
+}
+
+main .main .moreshadow .linh45 {
+  height: 45px;
+  line-height: 45px;
+  vertical-align: middle;
+}
+
+main .main .shop {
+  width: 1210px;
+  margin: 0 auto;
+  background: white;
+  height: 1500px;
+}
+
+main .main .list {
+  padding: 10px;
+  width: 282px;
+  min-height: 440px;
+  float: left;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  background: white;
+  min-height: 440px;
+  position: relative;
+  overflow: auto;
+}
+
+main .main .list ul {
+  width: 270px;
+  display: block;
+  width: 270px;
+  background: #fff;
+  height: auto;
+  padding-bottom: 20px;
+  min-height: 440px;
+}
+
+main .main .list ul li {
+  text-align: center;
+}
+
+main .main .list ul li img {
+  display: block;
+  max-width: 267px;
+  height: 267px;
+  height: 267px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+main .main .list ul li a {
+  color: #000;
+}
+
+main .main .list ul li a:link {
+  color: inherit;
+  text-decoration: none;
+}
+
+main .main .list ul li a:hover {
+  color: #b28247;
+}
+
+main .main .list ul li .w500 {
+  font-weight: 500;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  max-height: 50px;
+}
+
+main .main .list ul .fsize13 {
+  font-size: 13px;
+  color: #c2a67d;
+}
+
+/*分页*/
+/* 外面盒子样式---自己定义 */
+.page_div {
+  padding-left: 260px;
+  margin: 10px 0;
+  color: #666;
+}
+
+/* 页数按钮样式 */
+.page_div button {
+  display: inline-block;
+  min-width: 30px;
+  height: 28px;
+  cursor: pointer;
+  color: #666;
+  font-size: 13px;
+  line-height: 28px;
+  background-color: #f9f9f9;
+  border: 1px solid #dce0e0;
+  text-align: center;
+  margin: 0 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#firstPage, #lastPage, #nextPage, #prePage {
+  width: 50px;
+  color: #c2a67d;
+  border: 1px solid #c2a67d;
+}
+
+#nextPage, #prePage {
+  width: 70px;
+}
+
+.page_div .current {
+  background-color: #c2a67d;
+  border-color: #c2a67d;
+  color: #FFF;
+}
+
+/* 页面数量 */
+.totalPages {
+  margin: 0 10px;
+}
+
+.totalPages span, .totalSize span {
+  color: #0073A9;
+  margin: 0 5px;
+}
+
+/*button禁用*/
+.page_div button:disabled {
+  opacity: .5;
+  cursor: no-drop;
+}
+
+/*脚步开始*/
+footer {
+  margin: 0 auto;
+  padding: 0;
+  border-top: 1px solid #ccc;
+  width: 100%;
+  background: url(../img/index/footer_message_bg.jpg) center;
+  height: 602px;
+}
+
+.foot_top {
+  width: 1210px;
+  height: 116px;
+  border-bottom: 1px solid #c9c9c9;
+  margin-bottom: 0;
+}
+
+.foot_top li {
+  float: left;
+  margin-top: 26px;
+  width: 242px;
+  height: 64px;
+}
+
+.foot_top li img {
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+.foot_top li > a {
+  float: left;
+  line-height: 116px;
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 5px;
+  cursor: pointer;
+  vertical-align: top;
+}
+
+.foot_topr {
+  float: left;
+  margin-left: 32px;
+}
+
+.foot_topr > .p1 {
+  font-weight: bold;
+  font-size: 12px;
+  color: #000;
+  line-height: 24px;
+}
+
+.foot_topr > .p2 {
+  color: #333333;
+  line-height: 24px;
+  font-size: 12px;
+}
+
+.foot_topr > .p2 > a {
+  display: block;
+  color: #333333;
+}
+
+.foot_topr > .p2 > a:hover {
+  text-decoration: underline;
+}
+
+/*脚步中间*/
+.foot_middle {
+  margin-left: 70px;
+  height: 283px;
+  margin-bottom: 0;
+}
+
+.foot_middle li {
+  float: left;
+  width: 195px;
+  height: 160px;
+  text-align: left;
+}
+
+.foot_middle li h3 {
+  margin: 20px 0;
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.foot_middle li span {
+  width: 185px;
+  line-height: 24px;
+  float: left;
+  font-size: 12px;
+  color: #000;
+}
+
+.foot_middle li span a {
+  display: block;
+  color: #000;
+}
+
+.foot_middle li span:hover {
+  text-decoration: underline;
+}
+
+.foot_middle .foot_middle_app {
+  width: 140px;
+  height: 283px;
+  text-align: left;
+}
+
+.foot_middle .foot_middle_app > img {
+  margin: 0;
+}
+
+/*脚步第三部分*/
+.foot_bottom {
+  width: 1210px;
+  height: 194px;
+}
+
+.foot_bottom1 {
+  text-align: center;
+  line-height: 66px;
+}
+
+.foot_bottom1 > a {
+  font-size: 12px;
+  height: 11px;
+  color: #fff;
+  border-right: 1px solid #fff;
+  padding: 0 8px;
+}
+
+.foot_bottom2 {
+  width: 1210px;
+  height: 88px;
+}
+
+.foot_bottom2 > div {
+  text-align: center;
+  width: 1210px;
+  /*line-height: 44px;*/
+}
+
+.foot_bottom2 > div > a {
+  color: #fff;
+  font-size: 12px;
+}
+
+.foot_bottom2 > p {
+  width: 1210px;
+  font-size: 12px;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.foot_bottom3 {
+  width: 1120px;
+  height: 40px;
+  text-align: center;
+}
+
+.foot_bottom3 > a {
+  display: inline-block;
 }
